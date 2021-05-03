@@ -1,12 +1,37 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" 
-	xmlns:th="https://www.thymeleaf.org" 
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
 	xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
-    <head>
-        <title>Spring Security Example</title>
-    </head>
-    <body>
-        <h1>Welcome!</h1>
-        <p>Click <a th:href="@{/hello}">here</a> to see a greeting.</p>
-    </body>
+
+<head>
+	<title>Spring Security Example</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand navbar-dark bg-dark">
+		<a class="navbar-brand" href="/">Spring Security Application</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02"
+			aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarsExample02">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="/login">Login</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<br>
+	<h2 class="text-center text-success">Welcome to Spring Security Login Application!</h2>
+	<p  class="text-center font-weight-light">Click <a th:href="@{/hello}" class="text-info">here</a> to go to the application</p>
+</body>
+
 </html>
