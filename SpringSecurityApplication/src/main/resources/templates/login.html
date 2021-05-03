@@ -23,10 +23,13 @@
 				<li class="nav-item active">
 					<a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
 				</li>
-				<li class="nav-item inactive">
-					<a class="nav-link" href="/login">Login</a>
+				<li class="nav-item ">
+					<a class="nav-link " href="/login">Login</a>
 				</li>
 			</ul>
+			<form class="form-inline my-2 my-lg-0" th:action="@{/logout}" method="post">
+				<input class="btn btn-outline-light my-2 my-sm-0 " disabled type="submit" value="Sign Out">
+			</form>
 		</div>
 	</nav>
 	<br>
@@ -61,8 +64,8 @@
 			</div>
 			<div class="row-sm-3 form-group">
 				<div class="col-sm-3 form-check ">
-					<input type="checkbox" class="form-check-input " id="remember">
-					<label class="form-check-label" for="remember">Remember me</label> </div>
+					<input type="checkbox" class="form-check-input " name="remember-me" id="remember-me">
+					<label class="form-check-label" for="remember-me">Remember me</label> </div>
 			</div>
 			<div>
 				<button type="submit" class="btn btn-success">Sign in</button>
